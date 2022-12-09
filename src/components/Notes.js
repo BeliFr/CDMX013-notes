@@ -1,10 +1,10 @@
 import { useAuth } from "../context/authContext";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { NoteCreator } from "./NoteCreator";
+import AddNote from "./AddNote";
 
-/*export function Notes(){ 
-    const [notes, setNotes] = useState('');
+export function Notes(){ 
+    const [notes,] = useState('');
     const navigate = useNavigate ()
     const {user, logout, loading } = useAuth()
 
@@ -20,16 +20,16 @@ import { NoteCreator } from "./NoteCreator";
 
       <h1>Hello { user.displayName|| user.email}!!</h1>
 
-        <NoteCreator/>
+        <AddNote/>
 
       <button onClick={handleLogout}>logout</button>
 
 </div>;
-}*/
+}
 
 
   // useState ejecutar antes de que se randerice el componente 
-  export function Notes(){ 
+  /*export function Notes(){ 
 
   const [noteItems, setNoteItems] = useState([])
   const {user, logout, loading } = useAuth()
@@ -79,10 +79,10 @@ if(data){
         ))
       }
         </tbody>
-      </table>*/
+      </table>
       <button onClick={handleLogout} className="bg-slate-50 hover:bg-slate-200 text-black  shadow rounded border-2 border-gray-300 py-2 px-4 w-full">logout</button>
      
     </div>
   
     );
-  }
+  }*/
